@@ -1,0 +1,620 @@
+@charset "utf-8";
+
+* {
+    font-size: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+body{
+    font-family: "Montserrat", "ヒラギノ角ゴ　pro W3", "Hiragino Kaku";
+    width: 100%;
+}
+
+h1 {
+    color: black;
+    font-family: "Montserrat", "ヒラギノ角ゴ　pro W3";
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    margin: 2%;
+    text-align: center;
+    font-family: "Montserrat", "ヒラギノ角ゴ　pro W3";
+    font-size: 20px;
+    padding-top: 2%;
+}
+
+h3 {
+    font-size: 30px;
+    color: #4c3b2a;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #ffffff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0 10px;
+}
+
+.clearlist {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#site_reserve {
+    float: right;
+    width: 35%;
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* ヘッダーのコピー*/
+
+header{
+    z-index: 10;
+    height: 94px;
+    position: relative;
+    top: 0px;
+    background-color: rgb(233, 246, 246);
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    padding-bottom: 5px;
+}
+
+.header__navgroup{
+    text-align: center;
+    display: flex;
+    flex: none;
+    display: inline-block;
+}
+
+.header__navgroup > * + *{
+    margin-left: 60px;
+}
+
+.header__navitem{
+    font-size: 16px;
+    color: black;
+    padding: 5px 15px;
+    margin: 0 20px;
+}
+
+li {
+    padding: 26px 10px 20px 10px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.brand {
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    left: 110px;
+}
+
+.header_btn .btn_call {
+    width: 200px;
+    max-width: 100%;
+    text-align: center;
+    padding: 0px 5px;
+    position: relative;
+    left: 340px;
+}
+
+.header_btn {
+    display: inline-block;
+    outline: none;
+}
+
+/* ボタンのレイアウト*/
+.btn3{
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display:inline-block;
+}
+
+.btn3::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #3367ff;
+    display: block;
+    -webkit-transform-origin: right top;
+    -ms-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
+}
+.btn3:hover::before {
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1)
+}
+
+.btn2{
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display:inline-block;
+    border-bottom: 2px solid #3367ff;
+
+}
+
+.btn3{
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display:inline-block;
+}
+
+.btn3::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #3367ff;
+    display: block;
+    -webkit-transform-origin: right top;
+    -ms-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
+}
+
+.btn3:hover::before {
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1)
+}
+
+/* コンセプトレイアウト*/
+.main_image_no1 img {
+    width: auto;
+    height: 300px;
+    max-width: 100%;
+    margin: 60px 100px;
+    padding: 0 160px;
+}
+
+.main_image_no2 img {
+    width: 100%;
+    max-width: 250px;
+    margin: 50px 50px;
+    display: flex;
+}
+
+.menu_box1 img {
+    width: 70%;
+    max-width: 300px;
+    padding: 1% 1%;
+}
+
+.menu_box2 img {
+    width: 70%;
+    max-width: 300px;
+}
+
+.menu_box3 img {
+    width: 70%;
+    max-width: 300px;
+}
+
+.menu_title01 {
+    font-size: 36px;
+    color: #4c3b2a;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+    border-bottom: 4px solid #817668;
+}
+
+.greeting_img img{
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    margin-right: 0;
+    margin-left: auto;
+    display: block;
+    top: 500px;
+
+}
+
+/* メニューボックス編集*/
+
+.menu_box1 {
+    text-align: left;
+    font-size: 15px;
+    margin: 5% 4%;
+    background-color: #d4e9d6c3;
+}
+
+.menu_box1 p {
+    font-family: "Montserrat", "ヒラギノ角ゴ　pro W3", "Hiragino Kaku";
+    font-size: 20px;
+}
+
+.menu_box1 li {
+    font-size: 18px;
+    padding: 2% 2%;
+}
+
+.menu_box2 {
+    text-align: left;
+    font-size: 15px;
+    margin: 5% 4%;
+    background-color: #d4e9d6c3;
+}
+
+.menu_box2 p {
+    font-family: "Montserrat", "ヒラギノ角ゴ　pro W3", "Hiragino Kaku";
+    font-size: 20px;
+}
+
+.menu_box2 li {
+    font-size: 18px;
+    padding: 2% 2%;
+}
+
+.menu_box3 {
+    text-align: left;
+    font-size: 15px;
+    margin: 5% 4%;
+    background-color: #d4e9d6c3;
+}
+
+.menu_box3 p {
+    font-family: "Montserrat", "ヒラギノ角ゴ　pro W3", "Hiragino Kaku";
+    font-size: 20px;
+}
+
+.menu_box3 li {
+    font-size: 18px;
+    padding: 2% 2%;
+}
+
+.menu_box4 {
+    text-align: left;
+    font-size: 15px;
+    margin: 5% 4%;
+    background-color: #d4e9d6c3;
+}
+
+.menu_box4 p {
+    font-family: "Montserrat", "ヒラギノ角ゴ　pro W3", "Hiragino Kaku";
+    font-size: 20px;
+}
+
+.menu_box4 li {
+    font-size: 18px;
+    padding: 2% 2%;
+}
+
+/* ご挨拶のレイアウト*/
+
+.greeting_title01 {
+    font-size: 36px;
+    color: #4c3b2a;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+    border-bottom: 4px solid #817668;
+}
+
+p.author {
+    font-weight: bold;
+    margin: 20px;
+    text-align: left;
+}
+
+p.contents {
+    margin: 8px;
+    text-align: left;
+}
+
+.greeting_title01 img {
+    width: 80%;
+    margin: 0;
+}
+
+/* カレンダーのレイアウト*/
+
+.calendar_title01 {
+    font-size: 36px;
+    color: #4c3b2a;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+    border-bottom: 4px solid #817668;
+}
+
+.calendar_wrap {
+    width: 700px;
+    height: 300px;
+    color: #333;
+    text-align: center;
+    padding-bottom: 18%;
+    margin-bottom: 10%;
+    border-bottom: 2px solid #050000;
+}
+
+table.calendar_table02 thead th {
+    width: 10%;
+    background-color: rgb(216, 243, 243);
+    /* border-top: none;
+    border-bottom: none; */
+    font-weight: normal;
+    padding: 10px 0 10px;
+    color: #2a2a2a;
+    letter-spacing: 2.5px;
+    font-size: 1.6rem;
+}
+
+table.calendar_hours th {
+    text-align: center;
+}
+
+
+.calendar_table02 {
+    padding: 5px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.calendar_time {
+    padding: 20px;
+    width: 100%;
+    table-layout: fixed;
+    text-align: left;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-size: 14px;
+    padding: 2% 0 1%;
+    border: 1px solid #050000;
+}
+td {
+    font-weight: bold;
+    font-size: 15px;
+    padding: 1% 1%;
+    border: 1px solid #050000;
+}
+
+.t2-color {
+    color: red;
+}
+
+/*  コンセプトのレイアウト  */
+
+.concept_title01 {
+    font-size: 36px;
+    color: #4c3b2a;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-bottom: 4px solid #817668;
+}
+
+/*  ご挨拶のレイアウト */
+
+.flex {
+    display: flex;
+}
+
+/* アクセスのレイアウト */
+
+.access_title01 {
+    font-size: 36px;
+    color: #4c3b2a;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+    border-bottom: 4px solid #817668;
+}
+
+/* フッターのレイアウト */
+
+.table_bd {
+    width: 100%;
+    color: #2a2a2a;
+}
+
+.table_bd p {
+    font-size: 15px;
+    text-align: left;
+    padding: 5px;
+    border-bottom: 2px solid black;
+}
+
+.table_bd .address_p {
+    font-size: 20px;
+    border: none;
+}
+
+.button29 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    background-color: #cccccc;
+    border-radius: 50vh;
+    transition: 0.3s;
+}
+
+.button29 a::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-top: 3px solid #333;
+    border-left: 3px solid #333;
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+
+.button29 span {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+}
+
+.button29 a:hover {
+    background-color: #333333;
+}
+
+.button29 a:hover::after {
+    border-top: 3px solid #f2f2f2;
+    border-left: 3px solid #f2f2f2;
+}
+
+.footer h1 {
+    color: rgb(18, 17, 17);
+    font-size: 30px;
+}
+
+.footer a {
+    position: relative;
+    left: 350px;
+}
+
+.footer {
+    background-color: rgb(233, 246, 246);
+}
+
+/* 施設写真のレイアウト */
+
+.building_title01 {
+    font-size: 36px;
+    color: #4c3b2a;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 4px solid #817668;
+}
+
+.building_wrap {
+    width: 700px;
+    height: 100px;
+    color: #333;
+    text-align: center;
+}
+
+#cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 315px;
+    border: 1px solid lightgray;
+}
+
+.card:nth-child(2) {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.picture img {
+    width: 100%;
+    height: 200px;
+}
+
+.description {
+    width: 100%;
+    height: 145px;
+    padding-right: 12px;
+    padding-left: 12px;
+    box-sizing: border-box;
+}
+
+.description p {
+    font-size: 13px;
+    color: dimgray;
+}
+
+.clearfix img {
+    width: 70%;
+    max-width: 300px;
+    text-align: center;
+    padding: 30px 95px;
+    position: relative;
+    left: 240px;
+}
+
+/* メイン画面のスライド設定*/
+
+.slider {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 5% 0;
+
+}
+
+.slider-item {
+    width: 300px;
+    float: left;
+}
+
+img{
+    width:100%;
+}
+
+.slider-inner {
+    width: 300%;
+    animation: slider 10s infinite ease;
+}
+
+@keyframes slider {
+    0% {
+    transform: translateX(0);
+    }
+    33% {
+    transform: translateX(-300px);
+    }
+    66% {
+    transform: translateX(-600px);
+    }
+    100% {
+    transform: translateX(0);
+    }
+}
